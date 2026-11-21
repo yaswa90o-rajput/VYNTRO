@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; form-action 'self'; base-uri 'none'">
+<title>VYNTRO — Wear your own identity</title>
+<meta name="description" content="Discover VYNTRO streetwear: oversized fits, graphic essentials and made-to-order clothing.">
+<meta name="theme-color" content="#f2f0eb">
+<meta property="og:title" content="VYNTRO — Wear your own identity">
+<meta property="og:description" content="A new generation of streetwear. Explore the VYNTRO collection.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="/assets/vyntro-mark.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&display=swap">
+<style>
+:root{--bk:#f5f3ee;--ch:#ebe7df;--ow:#101010;--gr:#6b6b6b;--ln:#d8d3c8;--hd:rgba(245,243,238,.92);--er:#b3261e;--okc:#1b7f3b;--st:#b7791f;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bk);color:var(--ow);font:400 15px/1.5 "Bricolage Grotesque",system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--ow);outline-offset:2px}
+.bar{background:var(--ow);color:var(--bk);text-align:center;padding:8px 12px;font-size:13px;font-weight:700}
+header{position:sticky;top:0;z-index:20;background:var(--hd);backdrop-filter:blur(8px);border-bottom:1px solid var(--ln);display:flex;align-items:center;gap:16px;padding:12px 18px}
+.logo{font-weight:800;font-size:22px;letter-spacing:.12em;margin-right:auto}
+nav{display:flex;gap:18px}
+nav a{color:var(--gr);text-decoration:none}nav a:hover{color:var(--ow)}
+.ib{background:none;border:1px solid var(--ln);border-radius:50%;width:40px;height:40px;position:relative}
+.ib b{position:absolute;top:-4px;right:-4px;background:var(--ow);color:var(--bk);border-radius:9px;font-size:11px;min-width:18px;height:18px;line-height:18px}
+.hero{padding:8vh 18px 6vh;max-width:1200px;margin:auto;display:grid;gap:24px;align-items:center}@media(min-width:800px){.hero{grid-template-columns:1.2fr 1fr}}.stage{perspective:900px;display:grid;place-items:center;min-height:300px}.t3{width:250px;position:relative;transform-style:preserve-3d;animation:sp 10s linear infinite}.t3 div{backface-visibility:hidden}.t3 .bk{position:absolute;inset:0;transform:rotateY(180deg)}.t3 svg{width:100%;display:block;filter:drop-shadow(0 20px 20px rgba(0,0,0,.25))}@keyframes sp{to{transform:rotateY(360deg)}}.strip{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;padding:12px 18px;border-block:1px solid var(--ln);font-size:13px;color:var(--gr)}.rt{color:var(--st)}.rv{border-top:1px solid var(--ln);padding:8px 0}.tb{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:13px;color:var(--gr);margin:10px 0}details.ac{border-top:1px solid var(--ln);padding:10px 0}details.ac summary{font-weight:700;cursor:pointer}details.ac ul{padding-left:18px;color:var(--gr)}.st2{padding:8px 24px;transition:transform .15s}
+.hero h1{font-size:clamp(40px,9vw,104px);line-height:.88;margin:0 0 24px;font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:44ch;color:var(--gr);font-size:17px}
+.btn{background:var(--ow);color:var(--bk);border:0;padding:14px 26px;font-weight:700;border-radius:2px;display:inline-block;text-decoration:none}
+.btn.ghost{background:none;color:var(--ow);border:1px solid var(--gr)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+main{max-width:1200px;margin:auto;padding:0 18px 60px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0;align-items:center}
+.tools input,.tools select{background:var(--ch);border:1px solid var(--ln);border-radius:2px;padding:10px 12px}
+.tools input[type=search]{flex:1;min-width:180px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
+.chip{background:none;border:1px solid var(--ln);border-radius:20px;padding:7px 14px;color:var(--gr);white-space:nowrap}
+.chip[aria-pressed=true]{background:var(--ow);color:var(--bk);border-color:var(--ow)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:800px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--ch);position:relative;transition:transform .15s,box-shadow .2s}.card:hover{box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.card .im{aspect-ratio:4/5;display:grid;place-items:center;cursor:pointer;width:100%;border:0;background:var(--ch)}
+.card svg{width:78%}
+.card .m{padding:10px 12px 14px}
+.card .n{font-weight:700}.card .c{color:var(--gr);font-size:13px}
+.tag{position:absolute;top:8px;left:8px;background:var(--ow);color:var(--bk);font-size:12px;font-weight:700;padding:2px 8px}
+.heart{position:absolute;top:6px;right:6px;background:none;border:0;font-size:22px;color:var(--ow)}
+.pr s{color:var(--gr);margin-left:6px;font-size:13px}
+.story{border-top:1px solid var(--ln);margin-top:60px;padding-top:40px;display:grid;gap:20px;max-width:60ch}
+.story h2{font-size:34px;margin:0}
+.nl{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.nl input{flex:1;min-width:200px;background:var(--ch);border:1px solid var(--ln);padding:12px}
+footer{border-top:1px solid var(--ln);padding:30px 18px;color:var(--gr);font-size:13px;text-align:center}
+.pn{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--bk);border-left:1px solid var(--ln);z-index:40;padding:20px;overflow:auto;transform:translateX(100%);transition:transform .25s;visibility:hidden}
+.pn.o{transform:none;visibility:visible}
+@media(prefers-reduced-motion:reduce){.t3{animation:none}.pn{transition:none}html{scroll-behavior:auto}}
+.sh{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:30;display:none}.sh.o{display:block}
+.row{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--ln);align-items:center}
+.row svg{width:56px;flex:none;background:var(--ch)}
+.row div{flex:1}
+.q button{width:28px;height:28px;background:var(--ch);border:1px solid var(--ln)}
+.opt{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 16px}
+.opt button{background:none;border:1px solid var(--ln);padding:8px 14px}
+.opt button[aria-pressed=true]{border-color:var(--ow);background:var(--ow);color:var(--bk)}
+.sw{width:34px;height:34px;border-radius:50%!important;padding:0!important;border:2px solid var(--ln)!important}
+.sw[aria-pressed=true]{border-color:var(--ow)!important;outline:2px solid var(--bk);box-shadow:0 0 0 4px var(--ow)}
+.f{display:grid;gap:8px;margin:10px 0}.f input{background:var(--ch);border:1px solid var(--ln);padding:11px;width:100%}
+.sum div{display:flex;justify-content:space-between;padding:3px 0;color:var(--gr)}.sum .t{color:var(--ow);font-weight:800;font-size:18px;border-top:1px solid var(--ln);margin-top:6px;padding-top:8px}
+.pay label{display:flex;gap:10px;border:1px solid var(--ln);padding:12px;margin:8px 0;cursor:pointer}
+.err{color:var(--er);font-size:13px;min-height:18px}.ok{color:var(--okc);font-size:13px}
+.note{background:var(--ch);border-left:3px solid var(--gr);padding:10px 12px;font-size:13px;color:var(--gr);margin:12px 0}
+
+
+.help-fab{position:fixed;right:20px;bottom:20px;z-index:35;width:54px;height:54px;border:0;border-radius:50%;background:#b6ff3b;color:#111;font-size:25px;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.2)}
+.help-panel{position:fixed;right:20px;bottom:88px;z-index:36;width:min(350px,calc(100vw - 40px));padding:18px;background:#f8f7f3;color:#111;border:1px solid #d4d0c7;box-shadow:0 22px 70px rgba(0,0,0,.2)}
+.help-panel[hidden]{display:none}.help-head{display:flex;justify-content:space-between;align-items:center}.help-head button{border:0;background:none;font-size:24px}.help-panel p{font-size:13px;color:#777}.help-panel #help-answers{display:grid;gap:7px}.help-panel #help-answers button{background:#eeece5;border:1px solid #d4d0c7;padding:10px;text-align:left;font-size:12px}.help-panel #help-response{min-height:45px;margin:12px 0;font-size:13px;line-height:1.5}
+.logo img{display:block;object-fit:contain}
+
+/* VYNTRO premium refresh */
+:root{--bk:#f2f0eb;--ch:#e8e5de;--ow:#111111;--gr:#77736d;--ln:#d4d0c7;--hd:rgba(242,240,235,.9);--accent:#b6ff3b}
+body{background:radial-gradient(ellipse at 85% 0%,rgba(182,255,59,.09),transparent 32%),var(--bk);letter-spacing:.005em}
+.bar{letter-spacing:.12em;text-transform:uppercase;font-size:10px;padding:10px 12px;background:#b6ff3b;color:#101010}
+header{padding:15px clamp(16px,4vw,56px);box-shadow:0 8px 30px rgba(0,0,0,.035)}
+.logo{display:flex;align-items:center;gap:9px;font-size:25px;letter-spacing:.2em;text-shadow:1px 1px 0 rgba(0,0,0,.1)}
+nav a{font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:700}
+.hero{max-width:1440px;padding:clamp(56px,9vw,130px) clamp(20px,5vw,76px) 90px;min-height:620px}
+.hero>div:first-child{position:relative;z-index:2}
+.hero h1{max-width:760px;font-size:clamp(54px,10vw,142px);letter-spacing:-.075em;line-height:.79;text-transform:uppercase;text-wrap:balance}
+.hero h1:after{content:"";display:block;width:90px;height:8px;background:var(--accent);margin-top:30px;transform:skewX(-25deg)}
+.hero p{font-size:clamp(15px,1.5vw,19px);max-width:38ch}
+.hero .btn{box-shadow:7px 7px 0 var(--accent);transition:transform .2s,box-shadow .2s}
+.hero .btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--accent)}
+.stage{min-height:470px;position:relative;isolation:isolate}
+.stage:before{content:"";position:absolute;width:min(37vw,410px);aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#d8d5cc,#aaa79d);box-shadow:inset -25px -25px 55px rgba(0,0,0,.15),0 35px 70px rgba(0,0,0,.12);transform:rotateX(62deg) rotateZ(-22deg) translateY(80px);z-index:-1}
+.stage:after{content:"VYNTRO / DROP 001";position:absolute;right:0;bottom:20px;font-size:10px;letter-spacing:.25em;color:var(--gr)}
+.t3{width:clamp(220px,26vw,350px);filter:drop-shadow(0 35px 25px rgba(0,0,0,.2));animation:sp 16s ease-in-out infinite alternate}
+.strip{background:#111;color:#f2f0eb;border:0;letter-spacing:.12em;text-transform:uppercase;font-size:10px;padding:16px;gap:clamp(14px,4vw,50px)}
+main{max-width:1440px;padding:0 clamp(16px,4vw,56px) 90px}
+#shop{scroll-margin-top:100px}
+#shop:before{content:"THE COLLECTION";display:block;font-size:clamp(30px,5vw,58px);font-weight:800;letter-spacing:-.06em;margin:58px 0 12px}
+.chips{padding:12px 0 18px}
+.chip{border-radius:2px;text-transform:uppercase;font-size:10px;letter-spacing:.12em;font-weight:700}
+.tools input,.tools select{border-radius:2px;background:#fffdfa;min-height:44px}
+.grid{gap:clamp(10px,1.5vw,22px)}
+.card{background:#e8e5de;overflow:hidden;border:1px solid rgba(17,17,17,.06);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.card:hover{transform:translateY(-7px) rotateX(1deg);box-shadow:0 24px 45px rgba(0,0,0,.13)}
+.card .im{overflow:hidden;padding:0;display:block;background:#dedbd3}
+.card .im img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;display:block;transition:transform .65s cubic-bezier(.2,.8,.2,1),filter .4s;filter:saturate(.78)}
+.card:hover .im img{transform:scale(1.055);filter:saturate(1)}
+.card .m{padding:14px 14px 18px}
+.card .n{text-transform:uppercase;letter-spacing:.04em;font-size:13px}
+.card .c{font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+.tag{background:var(--accent);color:#111;text-transform:uppercase;letter-spacing:.1em;font-size:9px}
+.heart{background:rgba(245,243,238,.85);width:34px;height:34px;border-radius:50%;top:10px;right:10px}
+.story{max-width:none;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(20px,7vw,100px);padding:70px 0;margin-top:80px}
+.story h2{font-size:clamp(38px,6vw,76px);line-height:.9;letter-spacing:-.06em;text-transform:uppercase}
+.story>p{font-size:17px;max-width:50ch}
+footer{background:#111;color:#aaa;padding:42px 20px;line-height:2}
+footer a{color:#f2f0eb}
+.pn{width:min(520px,100%);padding:clamp(18px,4vw,34px);box-shadow:-30px 0 80px rgba(0,0,0,.12)}
+.pn h2{font-size:32px;letter-spacing:-.05em;text-transform:uppercase}
+.product-stage{background:#e4e1d9;overflow:hidden;border-radius:4px;perspective:900px;padding:0!important;margin:8px 0 20px}
+.checkout-form label{display:grid;gap:5px;font-size:12px;color:var(--gr)}.form-two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.consent{display:flex!important;grid-template-columns:auto 1fr;align-items:center;gap:8px}.consent input{width:auto!important}.stock-label{font-size:12px;color:#4d6e21;background:rgba(182,255,59,.22);padding:8px 10px;display:inline-block;border-radius:2px}.admin-product{border:1px solid var(--ln);padding:14px;margin:12px 0;background:var(--ch)}.admin-product-head{display:flex;justify-content:space-between;gap:10px;margin-bottom:10px}.admin-product-head small{color:var(--gr)}.admin-product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.admin-product-grid label{font-size:12px;color:var(--gr);display:grid;gap:5px}.admin-product-grid input,.admin-product-grid select{width:100%;min-width:0;padding:9px;border:1px solid var(--ln);background:var(--bk);color:var(--ow)}.admin-check{display:flex!important;align-items:center;gap:8px}.admin-check input{width:auto!important}.product-stage img{width:100%;height:min(48vh,460px);object-fit:cover;display:block;transition:transform .6s;transform:rotateY(-5deg) scale(1.02)}
+.product-stage:hover img{transform:rotateY(0) scale(1.055)}
+.cart-thumb{width:64px;height:76px;object-fit:cover;background:var(--ch);flex:none}
+.btn{border-radius:2px;letter-spacing:.08em;text-transform:uppercase;font-size:11px;box-shadow:4px 4px 0 var(--accent);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--accent)}
+.btn.ghost{box-shadow:none}
+.f input,.f textarea,.f select{border-radius:2px;border:1px solid var(--ln);padding:13px;background:#fffdfa;width:100%}
+.pay label{background:#fffdfa;border-radius:3px;align-items:center}
+.sum{background:rgba(255,255,255,.5);padding:14px;border:1px solid var(--ln);margin:14px 0}
+.note{border-left-color:var(--accent)}
+.ib{background:#fffdfa;transition:transform .2s}
+.ib:hover{transform:translateY(-2px)}
+@media(max-width:760px){header{gap:8px;padding:12px}nav{gap:10px;overflow:auto}nav a{font-size:9px;white-space:nowrap}.logo{font-size:20px}.hero{padding-top:55px;min-height:0;grid-template-columns:1fr}.stage{min-height:300px}.stage:before{width:230px}.t3{width:220px}.story{grid-template-columns:1fr}.strip{font-size:9px}.pn{padding:18px}.hero h1{font-size:clamp(52px,15vw,90px)}}
+@media(max-width:520px){.form-two,.admin-product-grid{grid-template-columns:1fr}}@media(max-width:420px){nav a:nth-child(4){display:none}.ib{width:36px;height:36px}.grid{gap:9px}.card .m{padding:10px}.card .n{font-size:11px}}
+</style></head><body>
+<div class="bar" id="ann">Free shipping above ₹999 · Pay online, get ₹80 off · Code WELCOME80</div>
+<header><span class="logo"><img src="/assets/vyntro-mark.svg" alt="" width="25" height="25">VYNTRO</span>
+<nav><a href="#shop" data-cat="All">Shop</a><a href="#shop" data-new="1">New arrivals</a><a href="#shop" data-best="1">Best sellers</a><a href="#story">About</a></nav>
+<button class="ib" id="wb" aria-label="Wishlist">♡<b id="wc">0</b></button>
+<button class="ib" id="cb" aria-label="Open bag">🛍<b id="cc">0</b></button></header>
+
+<section class="hero"><div><h1>Wear your own identity.</h1><p>Oversized fits and bold graphics, printed only when you order. Shipped across India.</p><p><a class="btn" href="#shop">Shop now</a></p></div><div class="stage" aria-hidden="true"><div class="t3" id="t3"></div></div></section><div class="strip"><span>Made to order</span><span>Pay online, save ₹80</span><span>Cash on delivery</span><span>4-day return requests</span><span>Support on WhatsApp</span></div>
+
+<main id="shop">
+<div class="chips" id="chips" role="group" aria-label="Categories"></div>
+<div class="tools"><input type="search" id="q" placeholder="Search name, SKU or category" aria-label="Search">
+<select id="sz" aria-label="Size"><option value="">Any size</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
+<select id="mp" aria-label="Max price"><option value="">Any price</option><option value="999">Under ₹999</option><option value="1499">Under ₹1,499</option><option value="2499">Under ₹2,499</option></select>
+<select id="so" aria-label="Sort"><option value="new">Newest</option><option value="lo">Price low to high</option><option value="hi">Price high to low</option><option value="best">Best selling</option></select></div>
+<div id="cnt" class="c" style="color:var(--gr)"></div>
+<div class="grid" id="grid"></div>
+<section class="story" id="story"><h2>Made for people who dress like themselves.</h2>
+<p style="color:var(--gr)">VYNTRO is a streetwear label built around fit first: boxy shoulders, heavy cotton and prints that don't crack. Every piece is printed only after you order, so nothing is made that isn't wanted.</p>
+<form class="nl" id="nlf"><input type="email" id="nle" placeholder="Email address" required aria-label="Email"><button class="btn">Subscribe</button>
+<label style="font-size:12px;color:var(--gr);flex-basis:100%"><input type="checkbox" id="nlc" required> I agree to receive VYNTRO emails and can unsubscribe anytime.</label></form><div id="nlm" class="ok"></div></section>
+</main>
+<footer>© 2026 VYNTRO · Brand name provisional · <span id="sup"></span><br><a href="/shipping.html">Shipping</a> · <a href="/returns.html">Returns and refunds</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></footer>
+
+<div class="sh" id="sh"></div>
+<aside class="pn" id="pd" aria-label="Product"></aside>
+<aside class="pn" id="cp" aria-label="Bag"></aside>
+<button class="help-fab" id="help-open" aria-label="Open help assistant">?</button><aside class="help-panel" id="help-panel" aria-label="VYNTRO help" hidden><div class="help-head"><b>VYNTRO HELP</b><button id="help-close" aria-label="Close help">×</button></div><p>Quick answers for your shopping questions.</p><div id="help-answers"><button data-help="order">How do I place an order?</button><button data-help="payment">Payment and ₹80 online saving</button><button data-help="cod">COD charges</button><button data-help="delivery">Delivery and tracking</button><button data-help="returns">Returns and refunds</button><button data-help="damage">Damaged or incorrect item</button></div><div id="help-response" role="status"></div><a class="btn ghost" id="help-wa" href="#" target="_blank" rel="noopener noreferrer">Contact support</a></aside><div id="admv" style="display:none;position:fixed;inset:0;z-index:50;background:var(--bk);overflow:auto;padding:18px"></div>
+
+<script>
+// Demo catalogue: names and prices are PLACEHOLDERS, not real Qikink costs.
+// EDIT THESE 3 VALUES: your UPI ID, and your WhatsApp number with 91 (no + or spaces)
+var SHOP={upi:"yourname@upi",name:"VYNTRO",wa:"919999999999",days:"5-8"}; // days = delivery estimate shown to customers, edit it
+
+var CFG={freeShip:999,ship:79,prepaid:80,cod:80,codFee:15,taxRate:0,coupons:{WELCOME80:{off:80,min:799}}};
+var savedCoupons=S("vy_coupons",{});Object.keys(savedCoupons).forEach(function(k){CFG.coupons[k]=savedCoupons[k]});
+var ANN=S("vy_announcement","Free shipping above ₹999 · Pay online, get ₹80 off · Code WELCOME80");
+var COL={"Black":"#1a1a1a","Off White":"#f5f3ee","White":"#ffffff","Grey":"#8a8a8a","Navy":"#1f2a44","Beige":"#c9b99d","Olive":"#626b45","Brown":"#684b3a","Burgundy":"#6e2436"};
+var CATS=["All","Oversized T-Shirts","Regular T-Shirts","Hoodies","Sweatshirts","Cargos","Accessories"];
+var P=[
+["Drift Oversized Tee","Oversized T-Shirts",899,1199,["Black","Off White","Grey"],1,1,"VY-OT-001"],
+["Static Oversized Tee","Oversized T-Shirts",949,0,["Black","Off White"],1,0,"VY-OT-002"],
+["Core Regular Tee","Regular T-Shirts",699,0,["Black","Off White","Navy"],0,1,"VY-RT-001"],
+["Signal Graphic Tee","Regular T-Shirts",799,999,["Black","Grey"],1,0,"VY-RT-002"],
+["Nightshift Hoodie","Hoodies",1799,2199,["Black","Grey"],0,1,"VY-HD-001"],
+["Orbit Zip Hoodie","Hoodies",1999,0,["Black","Navy"],1,0,"VY-HD-002"],
+["Static Crew Sweatshirt","Sweatshirts",1499,0,["Grey","Off White"],0,1,"VY-SW-001"],
+["Utility Cargo","Cargos",1699,1999,["Black","Navy"],1,0,"VY-CG-001"],
+["Relaxed Cargo","Cargos",1599,0,["Grey","Black"],0,0,"VY-CG-002"],
+["Tote Bag","Accessories",499,0,["Black","Off White"],0,0,"VY-AC-001"]
+].map(function(a,i){return{id:i,n:a[0],cat:a[1],p:a[2],mrp:a[3],cols:a[4],isNew:a[5],best:a[6],sku:a[7],sizes:a[1]=="Accessories"?["One size"]:["S","M","L","XL","XXL"],made:i==9?false:true}});
+
+P[9].sizes=["One size"];
+// Editorial demo photography. Replace with original/licensed product photos before commercial launch.
+var PHOTOS=[
+"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85",
+"https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1000&q=85",
+"https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1000&q=85",
+"https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=1000&q=85",
+"https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85",
+"https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85",
+"https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=85",
+"https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1000&q=85",
+"https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85",
+"https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=85"
+];
+P.forEach(function(x,i){x.image=PHOTOS[i%PHOTOS.length];x.description=x.cat+" made for everyday rotation. Relaxed streetwear silhouette, considered detailing and made-to-order fulfilment.";x.material=x.cat=="Hoodies"?"Cotton-blend fleece (confirm exact supplier spec before publishing)":"Cotton fabric (confirm exact supplier GSM before publishing)";x.stockMode="made_to_order";x.stockQty=0;x.rating=4.8;x.reviewCount=0;});
+function photo(x){return x.image||PHOTOS[(x.id||0)%PHOTOS.length]}
+
+var EXTRA=S("vy_extra",[]);EXTRA.forEach(function(x){if(x&&typeof x.id=="number"&&!P.some(function(p){return p.id===x.id}))P.push(x)});
+var PR=S("vy_pr",{}),sc=S("vy_cfg",{});P.forEach(function(x){var o=PR[x.id];if(o){if(o.p>0&&o.p<100000)x.p=Math.round(o.p);x.off=!!o.off;if(o.stockMode)x.stockMode=o.stockMode;if(Number.isFinite(o.stockQty))x.stockQty=o.stockQty;if(o.image)x.image=o.image;if(o.sizes)x.sizes=o.sizes;if(o.cols)x.cols=o.cols;if(o.description)x.description=o.description}});for(var k0 in sc)if(typeof sc[k0]==="number"&&k0 in CFG)CFG[k0]=sc[k0];
+function S(k,d){try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}}
+function W(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+var O=S("vy_orders",[]),cart=S("vy_cart",[]),wish=S("vy_wish",[]),cat="All",onlyNew=0,onlyBest=0,coupon=null,pay="prepaid";
+var $=function(i){return document.getElementById(i)};
+function inr(n){return "₹"+n.toLocaleString("en-IN")}
+function tee(c,cat){var f=COL[c]||"#222",s="#555";
+var body=cat=="Hoodies"?'<path d="M30 40 L60 28 Q100 52 140 28 L170 40 L190 110 L164 118 L160 215 L40 215 L36 118 L10 110Z"/><path d="M70 30Q100 70 130 30" fill="none" stroke="'+s+'" stroke-width="3"/>':cat=="Cargos"?'<path d="M55 20 H145 L158 215 H108 L100 90 L92 215 H42Z"/>':cat=="Accessories"?'<path d="M45 70 H155 L165 215 H35Z"/><path d="M75 70 Q75 25 100 25 Q125 25 125 70" fill="none" stroke="'+s+'" stroke-width="6"/>':'<path d="M60 22 Q100 50 140 22 L192 55 L172 95 L152 85 L152 210 H48 V85 L28 95 L8 55Z"/>';
+return '<svg viewBox="0 0 200 230" aria-hidden="true"><g fill="'+f+'" stroke="'+s+'" stroke-width="1.5">'+body+'</g></svg>'}
+function list(){var q=$("q").value.toLowerCase(),sz=$("sz").value,mp=+$("mp").value||1e9,so=$("so").value;
+var r=P.filter(function(x){return(cat=="All"||x.cat==cat)&&(!onlyNew||x.isNew)&&(!onlyBest||x.best)&&x.p<=mp&&(!sz||x.sizes.indexOf(sz)>-1)&&(x.n+x.sku+x.cat).toLowerCase().indexOf(q)>-1});
+if(so=="lo")r.sort(function(a,b){return a.p-b.p});if(so=="hi")r.sort(function(a,b){return b.p-a.p});
+if(so=="best")r.sort(function(a,b){return b.best-a.best});if(so=="new")r.sort(function(a,b){return b.isNew-a.isNew});
+$("cnt").textContent=r.length+" product"+(r.length==1?"":"s");
+$("grid").innerHTML=r.length?r.map(function(x){var h=wish.indexOf(x.id)>-1;
+return '<div class="card">'+(x.off||(x.stockMode=="manual"&&x.stockQty<1)?'<span class="tag">Sold out</span>':x.isNew?'<span class="tag">New arrival</span>':x.best?'<span class="tag">Best seller</span>':'')+'<button class="heart" data-w="'+x.id+'" aria-label="'+(h?"Remove from":"Add to")+' wishlist" aria-pressed="'+h+'">'+(h?"♥":"♡")+'</button><button class="im" data-o="'+x.id+'" aria-label="View '+x.n+'"><img src="'+esc(photo(x))+'" alt="'+esc(x.n)+'" loading="lazy" onerror="this.onerror=null;this.src=&quot;/assets/vyntro-fallback.svg&quot;"></button><div class="m"><div class="n">'+x.n+'</div><div class="c">'+x.cat+'</div>'+stars(x.id)+'<div class="pr">'+inr(x.p)+(x.mrp?'<s>'+inr(x.mrp)+'</s>':'')+'</div></div></div>'}).join(""):'<p style="color:var(--gr)">No products match. Clear the search or filters to see everything.</p>'}
+function chips(){$("chips").innerHTML=CATS.map(function(c){return '<button class="chip" aria-pressed="'+(c==cat&&!onlyNew&&!onlyBest)+'" data-c="'+c+'">'+c+'</button>'}).join("")}
+function open(el){$("sh").classList.add("o");el.classList.add("o")}
+function closeAll(){$("sh").classList.remove("o");$("pd").classList.remove("o");$("cp").classList.remove("o")}
+var sel={};
+var R=S("vy_rev",[]),rate=0;
+function rv(id){return R.filter(function(r){return r.pid==id})}
+function avg(a){return a.length?a.reduce(function(s,r){return s+r.rate},0)/a.length:0}
+function star(n){n=Math.round(n);return "★★★★★".slice(0,n)+"☆☆☆☆☆".slice(0,5-n)}
+function stars(id){var a=rv(id);return a.length?'<div class="rt" style="font-size:13px">★ '+avg(a).toFixed(1)+' ('+a.length+')</div>':''}
+function prod(id){var x=P[id];sel={id:id,size:x.sizes[0],col:x.cols[0]};rate=0;var a=rv(id),h=wish.indexOf(id)>-1,
+sim=P.filter(function(y){return y.cat==x.cat&&y.id!=id}).slice(0,4),
+off=x.mrp?Math.round((1-x.p/x.mrp)*100):0;
+$("pd").innerHTML='<button class="ib" data-x aria-label="Close">✕</button><div class="st2 product-stage"><img id="ps" src="'+esc(photo(x))+'" alt="'+esc(x.n)+'" onerror="this.onerror=null;this.src=&quot;/assets/vyntro-fallback.svg&quot;"></div>'+
+'<h2 style="margin:6px 0 0">'+x.n+'</h2><div style="color:var(--gr);font-size:13px">'+x.sku+' · '+x.cat+'</div>'+
+'<div class="rt" style="margin:6px 0">'+(a.length?star(avg(a))+' '+avg(a).toFixed(1)+' ('+a.length+' review'+(a.length>1?"s":"")+')':'No reviews yet')+'</div>'+
+'<p class="pr" style="font-size:22px;margin:4px 0">'+inr(x.p)+(x.mrp?'<s>'+inr(x.mrp)+'</s> <b class="ok">'+off+'% off</b>':'')+'</p><p class="ok" style="margin:0 0 10px">Pay online and save '+inr(CFG.prepaid)+' more</p>'+
+'<div>Colour</div><div class="opt" id="co2">'+x.cols.map(function(c,i){return '<button class="sw" data-k="'+c+'" aria-label="'+c+'" aria-pressed="'+(i==0)+'" style="background:'+COL[c]+'"></button>'}).join("")+'</div>'+
+'<div>Size</div><div class="opt" id="so2">'+x.sizes.map(function(s,i){return '<button data-s="'+s+'" aria-pressed="'+(i==0)+'">'+s+'</button>'}).join("")+'</div>'+
+'<p style="font-size:13px;color:var(--gr)">Fit tip: oversized pieces are cut roomy, so take your usual size for a relaxed fit or one size down for a closer fit.</p>'+
+'<div class="f"><div style="display:flex;gap:8px"><input id="pc" inputmode="numeric" maxlength="6" placeholder="Enter delivery PIN code" aria-label="PIN code"><button class="btn ghost" data-pin>Check</button></div><div class="ok" id="pm" role="status"></div></div>'+
+'<button class="btn" style="width:100%" data-add'+(x.off||(x.stockMode=="manual"&&x.stockQty<1)?' disabled':'')+'>'+(x.off||(x.stockMode=="manual"&&x.stockQty<1)?'Sold out':'Add to bag')+'</button>'+
+'<div style="display:flex;gap:8px;margin:8px 0"><button class="btn ghost" style="flex:1" data-wl>'+(h?'♥ Saved':'♡ Wishlist')+'</button><button class="btn ghost" style="flex:1" data-sh>Share</button></div>'+
+'<div class="tb"><span>🏷 Sold by VYNTRO</span><span>✔ Genuine VYNTRO design</span><span>🧵 Made to order</span><span>💵 COD available</span></div>'+
+'<details class="ac" open><summary>Product description</summary><p>'+esc(x.description||"Designed for everyday streetwear rotation.")+'</p><p><b>Fabric:</b> '+esc(x.material||"See product label")+'</p><p><b>Fulfilment:</b> Made to order after purchase.</p></details>'+
+'<details class="ac" open><summary>Delivery, returns and replacement</summary><ul><li>Delivery: about '+SHOP.days+' working days after dispatch. Tracking is shared on WhatsApp.</li><li>Return or refund request within 4 days of delivery if the item is unused, unwashed and has its tags.</li><li>Wrong, damaged or misprinted item? Send photos and we will arrange a replacement or refund after review.</li><li>Your rights under Indian consumer law are not affected. <a href="/returns.html">Full policy</a></li></ul></details>'+
+'<details class="ac"><summary>Offers</summary><ul><li>Pay online: extra '+inr(CFG.prepaid)+' off</li><li>Code WELCOME80: '+inr(80)+' off above '+inr(CFG.coupons.WELCOME80.min)+'</li><li>Free shipping above '+inr(CFG.freeShip)+'</li></ul></details>'+
+'<h3>Ratings and reviews</h3>'+(a.length?a.map(function(r){return '<div class="rv"><b>'+esc(r.name)+'</b> <span class="rt">'+star(r.rate)+'</span>'+'<p style="margin:4px 0">'+esc(r.text)+'</p></div>'}).join(""):'<p style="color:var(--gr)">Be the first to review this product.</p>')+
+'<div class="f"><div>Rate this product</div><div class="opt" id="rs">'+[1,2,3,4,5].map(function(n){return '<button data-rate="'+n+'" aria-label="'+n+' star" aria-pressed="false">'+n+'★</button>'}).join("")+'</div><input id="rn" placeholder="Your name" maxlength="40"><input id="rt2" placeholder="Write your review" maxlength="500"><button class="btn ghost" data-rv>Submit review</button><div class="err" id="rm" role="alert"></div><div style="font-size:12px;color:var(--gr)">Reviews are saved on this device.</div></div>'+
+(sim.length?'<h3>You may also like</h3><div class="opt">'+sim.map(function(y){return '<button data-sim="'+y.id+'">'+y.n+' · '+inr(y.p)+'</button>'}).join("")+'</div>':'');
+open($("pd"))}
+$("pd").addEventListener("click",function(e){var t=e.target.closest("[data-pin],[data-rate],[data-rv],[data-wl],[data-sh],[data-sim]");if(!t)return;var d=t.dataset;
+if(d.pin!==undefined){var v=$("pc").value.trim();$("pm").className=/^[1-9]\d{5}$/.test(v)?"ok":"err";$("pm").textContent=/^[1-9]\d{5}$/.test(v)?"Estimated delivery to "+v+": "+SHOP.days+" working days after dispatch. Exact timing is confirmed on WhatsApp.":"Enter a valid 6-digit PIN code."}
+else if(d.rate){rate=+d.rate;Array.prototype.forEach.call($("rs").children,function(b){b.setAttribute("aria-pressed",+b.dataset.rate<=rate)})}
+else if(d.rv!==undefined){var n=$("rn").value.trim(),tx=$("rt2").value.trim();if(!rate||tx.length<10||n.length<2){$("rm").textContent="Pick a star rating, add your name and write at least 10 characters.";return}R.unshift({pid:sel.id,name:n.slice(0,40),rate:rate,text:tx.slice(0,500),at:Date.now()});W("vy_rev",R);var s=sel.id;prod(s);list()}
+else if(d.wl!==undefined){var k=wish.indexOf(sel.id);k>-1?wish.splice(k,1):wish.push(sel.id);W("vy_wish",wish);$("wc").textContent=wish.length;t.textContent=k>-1?"♡ Wishlist":"♥ Saved";list()}
+else if(d.sh!==undefined){try{navigator.share({title:P[sel.id].n,url:location.href.split("#")[0]})}catch(er){}}
+else if(d.sim!==undefined)prod(+d.sim)});
+var rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+document.addEventListener("pointermove",function(e){if(rm||e.pointerType!="mouse")return;var c=e.target.closest(".card,.st2");if(!c)return;var b=c.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;c.style.transform="perspective(800px) rotateY("+x*12+"deg) rotateX("+-y*12+"deg)"});
+document.addEventListener("pointerout",function(e){var c=e.target.closest(".card,.st2");if(c&&!c.contains(e.relatedTarget))c.style.transform=""});
+$("t3").innerHTML='<div>'+tee("Black","T")+'</div><div class="bk">'+tee("Off White","T")+'</div>';
+
+function totals(){var sub=0;cart.forEach(function(i){sub+=P[i.id].p*i.q});
+var d=0,msg="",ok=false;if(coupon){var c=CFG.coupons[coupon];if(sub>=c.min){d=c.off;ok=true}else msg="Add "+inr(c.min-sub)+" more to use "+coupon+"."}
+var taxable=Math.max(0,sub-d),tax=Math.round(taxable*(CFG.taxRate||0)/100),ship=(sub-d>=CFG.freeShip||!sub)?0:CFG.ship,pp=pay=="prepaid"?CFG.prepaid:0,cod=pay=="cod"?CFG.cod+CFG.codFee:0;
+return{sub:sub,d:d,ok:ok,msg:msg,ship:ship,pp:pp,cod:cod,tax:tax,tot:Math.max(0,sub-d+ship-pp+cod+tax)}}
+function cartView(){var t=totals();var n=0;cart.forEach(function(i){n+=i.q});$("cc").textContent=n;W("vy_cart",cart);
+if(!cart.length){$("cp").innerHTML='<button class="ib" data-x aria-label="Close">✕</button><h2>Your bag is empty</h2><p style="color:var(--gr)">Pick a size and colour on any product to add it here.</p><a class="btn" href="#shop" data-x>Browse the shop</a>';return}
+$("cp").innerHTML='<button class="ib" data-x aria-label="Close">✕</button><h2>Your bag</h2>'+cart.map(function(i,k){var x=P[i.id];return '<div class="row"><img class="cart-thumb" src="'+esc(photo(x))+'" alt="'+esc(x.n)+'" onerror="this.onerror=null;this.src=&quot;/assets/vyntro-fallback.svg&quot;"><div><b>'+x.n+'</b><br><span style="color:var(--gr);font-size:13px">'+i.size+' · '+i.col+'</span><br>'+inr(x.p*i.q)+'</div><span class="q"><button data-m="'+k+'" aria-label="Fewer">−</button> '+i.q+' <button data-p="'+k+'" aria-label="More">+</button></span></div>'}).join("")+
+'<div class="f"><div style="display:flex;gap:8px"><input id="cpn" placeholder="Coupon code" value="'+(coupon||"")+'" aria-label="Coupon code"><button class="btn ghost" data-cp>Apply</button></div><div class="'+(t.ok?"ok":"err")+'" id="cm">'+(t.ok?coupon+" applied: −"+inr(t.d):t.msg)+'</div></div>'+
+'<div class="pay"><label><input type="radio" name="py" value="prepaid" '+(pay=="prepaid"?"checked":"")+'> <span><b>Pay online</b> — save '+inr(CFG.prepaid)+'</span></label><label><input type="radio" name="py" value="cod" '+(pay=="cod"?"checked":"")+'> <span><b>Cash on delivery</b> — +'+inr(CFG.cod)+' COD + '+inr(CFG.codFee)+' handling</span></label></div>'+
+'<div class="sum"><div><span>Subtotal</span><span>'+inr(t.sub)+'</span></div>'+(t.d?'<div><span>Coupon</span><span>−'+inr(t.d)+'</span></div>':'')+'<div><span>Shipping</span><span>'+(t.ship?inr(t.ship):"Free")+'</span></div>'+(t.pp?'<div><span>Online payment discount</span><span>−'+inr(t.pp)+'</span></div>':'')+(t.cod?'<div><span>COD surcharge</span><span>'+inr(CFG.cod)+'</span></div><div><span>COD handling</span><span>'+inr(CFG.codFee)+'</span></div>':'')+'<div><span>Estimated tax ('+(CFG.taxRate||0)+'%)</span><span>'+inr(t.tax)+'</span></div><div class="t"><span>Total</span><span>'+inr(t.tot)+'</span></div></div>'+
+'<form id="co" class="f checkout-form" novalidate><h3>Delivery details</h3><div class="form-two"><label>Full name<input id="nm" placeholder="Your full name" autocomplete="name"></label><label>Mobile number<input id="ph" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number" autocomplete="tel"></label></div><label>Email address<input id="em" type="email" placeholder="you@example.com" autocomplete="email"></label><label>House / street / area<input id="ad" placeholder="Flat, house number, street and area" autocomplete="street-address"></label><div class="form-two"><label>City<input id="city" placeholder="City" autocomplete="address-level2"></label><label>State<input id="state" placeholder="State" autocomplete="address-level1"></label></div><div class="form-two"><label>PIN code<input id="pn2" inputmode="numeric" maxlength="6" placeholder="6-digit PIN" autocomplete="postal-code"></label><label>Landmark (optional)<input id="landmark" placeholder="Nearby landmark"></label></div><label class="consent"><input type="checkbox" id="accept"> I have reviewed my order and agree to the store policies.</label><div class="err" id="ce" role="alert"></div><div class="note">This storefront package currently uses a local demo order flow. Real order storage and payment confirmation must be connected before accepting customer orders.</div><button class="btn" style="width:100%">Review and place demo order</button></form>'}
+function addCart(){if(P[sel.id].off||(P[sel.id].stockMode=="manual"&&P[sel.id].stockQty<1))return;var f=cart.filter(function(i){return i.id==sel.id&&i.size==sel.size&&i.col==sel.col})[0];if(f){if(f.q>=10||(P[sel.id].stockMode=="manual"&&f.q>=P[sel.id].stockQty))return;f.q++}else cart.push({id:sel.id,size:sel.size,col:sel.col,q:1});cartView();open($("cp"));$("pd").classList.remove("o")}
+function place(e){e.preventDefault();var v=function(i){return $(i).value.trim()},er="";
+if(v("nm").length<2)er="Enter your full name.";else if(!/^\S+@\S+\.\S+$/.test(v("em")))er="Enter a valid email address.";else if(!/^[6-9]\d{9}$/.test(v("ph")))er="Enter a 10-digit Indian mobile number.";else if(v("ad").length<8)er="Enter your full address.";else if(v("city").length<2||v("state").length<2)er="Enter your city and state.";else if(!/^[1-9]\d{5}$/.test(v("pn2")))er="Enter a valid 6-digit PIN code.";else if(!$("accept").checked)er="Please confirm the order and store policies.";
+if(er){$("ce").textContent=er;return}
+if(cart.some(function(i){return P[i.id].off||(P[i.id].stockMode=="manual"&&P[i.id].stockQty<i.q)})){$("ce").textContent="A product in your bag is sold out or has insufficient stock. Update your bag to continue.";return}
+var t=totals(),id="VY-"+Date.now().toString(36).toUpperCase();O.unshift({id:id,at:new Date().toISOString(),name:v("nm").slice(0,80),email:v("em").slice(0,100),phone:v("ph"),addr:[v("ad"),v("landmark"),v("city"),v("state"),v("pn2")].filter(Boolean).join(", ").slice(0,250),items:cart.map(function(i){return P[i.id].n+" ("+P[i.id].sku+") "+i.size+"/"+i.col+" x"+i.q}),pay:pay,coupon:coupon||"",sub:t.sub,disc:t.d+t.pp,tax:t.tax,shipping:t.ship,codCharge:t.cod,tot:t.tot,st:pay=="cod"?"Pending":"Payment Pending",payst:"Awaiting payment",qk:"",cr:"",tn:"",tu:"",note:"",cost:0});W("vy_orders",O);cart.forEach(function(i){var p=P[i.id];if(p.stockMode=="manual")p.stockQty=Math.max(0,p.stockQty-i.q)});W("vy_pr",P.reduce(function(a,p){a[p.id]={p:p.p,off:p.off,stockMode:p.stockMode,stockQty:p.stockQty,image:p.image};return a},{}));cart=[];coupon=null;W("vy_cart",cart);
+$("cc").textContent=0;done(O[0])}
+document.addEventListener("click",function(e){var t=e.target.closest("[data-c],[data-w],[data-o],[data-x],[data-s],[data-k],[data-add],[data-m],[data-p],[data-cp],[data-new],[data-best],#cb,#wb,#sh");if(!t)return;
+if(t.dataset.c){cat=t.dataset.c;onlyNew=onlyBest=0;chips();list()}
+else if(t.dataset.new||t.dataset.best){cat="All";onlyNew=+!!t.dataset.new;onlyBest=+!!t.dataset.best;chips();list()}
+else if(t.dataset.w!==undefined){var i=+t.dataset.w,k=wish.indexOf(i);k>-1?wish.splice(k,1):wish.push(i);W("vy_wish",wish);$("wc").textContent=wish.length;list()}
+else if(t.dataset.o!==undefined)prod(+t.dataset.o);
+else if(t.id=="cb"){cartView();open($("cp"))}
+else if(t.id=="wb"){cat="All";onlyNew=onlyBest=0;$("q").value="";P.forEach(function(){});var ids=wish;$("grid").innerHTML=ids.length?"":"";list();if(ids.length){$("grid").innerHTML=$("grid").innerHTML;var all=$("grid").querySelectorAll(".card");P.forEach(function(x,j){});Array.prototype.forEach.call(all,function(c){var b=c.querySelector("[data-w]");if(ids.indexOf(+b.dataset.w)<0)c.remove()});$("cnt").textContent=ids.length+" in your wishlist"}else $("cnt").textContent="Your wishlist is empty. Tap ♡ on a product to save it.";location.hash="shop"}
+else if(t.dataset.x!==undefined||t.id=="sh")closeAll();
+else if(t.dataset.s){sel.size=t.dataset.s;Array.prototype.forEach.call($("so2").children,function(b){b.setAttribute("aria-pressed",b==t)})}
+else if(t.dataset.k){sel.col=t.dataset.k;Array.prototype.forEach.call($("co2").children,function(b){b.setAttribute("aria-pressed",b==t)})}
+else if(t.dataset.add!==undefined)addCart();
+else if(t.dataset.m!==undefined){var c=cart[+t.dataset.m];c.q--;if(c.q<1)cart.splice(+t.dataset.m,1);cartView()}
+else if(t.dataset.p!==undefined){var item=cart[+t.dataset.p],product=P[item.id];if(item.q<10&&(product.stockMode!="manual"||item.q<product.stockQty))item.q++;cartView()}
+else if(t.dataset.cp!==undefined){var code=$("cpn").value.trim().toUpperCase();if(!code){coupon=null;cartView();return}
+if(!CFG.coupons[code]){coupon=null;cartView();$("cm").textContent="Invalid coupon code. Check the spelling and try again.";return}coupon=code;cartView()}});
+document.addEventListener("change",function(e){if(e.target.name=="py"){pay=e.target.value;cartView()}});
+document.addEventListener("submit",function(e){if(e.target.id=="co")place(e);if(e.target.id=="tf"){e.preventDefault();var id=$("tid").value.trim().toUpperCase(),o=O.filter(function(x){return x.id==id})[0];$("tr").innerHTML=o?'<p><b>'+esc(o.st)+'</b></p>'+(o.cr||o.tn?'<p>'+esc(o.cr)+' '+esc(o.tn)+'</p>':'<p style="color:var(--gr)">Tracking details will appear once the order ships.</p>')+(/^https?:\/\//i.test(o.tu)?'<a class="btn" href="'+esc(o.tu)+'" rel="noopener noreferrer" target="_blank">Open tracking</a>':''):'<p class="err">No order found with that ID. Check it and try again.</p>'}});
+document.addEventListener("keydown",function(e){if(e.key=="Escape")closeAll()});
+["q","sz","mp","so"].forEach(function(i){$(i).addEventListener("input",list)});
+$("nlf").addEventListener("submit",function(e){e.preventDefault();$("nlm").textContent="Thanks. This is a demo form, so your email was not stored."});
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return"&#"+c.charCodeAt(0)+";"})}
+var STS=["Pending","Payment Pending","Payment Confirmed","Confirmed","Processing","Sent to Qikink","Shipped","Out for Delivery","Delivered","Cancelled","Return Requested","Refund Processing","Refunded"];
+function flash(m){var a=$("am");if(a)a.textContent=m}
+function cp(s){try{navigator.clipboard.writeText(s).then(function(){flash("Copied")},function(){flash("Copy blocked by browser")})}catch(e){flash("Copy blocked by browser")}}
+function csv(){var h=["id","at","name","email","phone","addr","items","pay","payst","coupon","disc","shipping","codCharge","tax","tot","st","qk","cr","tn","tu","cost"];return [h.join(",")].concat(O.map(function(o){return h.map(function(k){var v=Array.isArray(o[k])?o[k].join("; "):String(o[k]);if(/^[=+\-@]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"'}).join(",")})).join("\n")}
+function adm(){var c=function(s){return O.filter(function(o){return o.st==s}).length},rev=0,cost=0;
+O.forEach(function(o){if(o.st!="Cancelled"&&o.st!="Refunded"){rev+=o.tot;cost+=+o.cost||0}});
+$("admv").innerHTML='<div style="max-width:900px;margin:auto"><button class="btn ghost" data-ax>Close admin</button><h1>Admin (local demo)</h1><p class="note">Demo only: data stays in this browser and this page has no login, so do not enter real customer data. The protected admin with real login and a database comes with the backend stage.</p><div class="sum"><div><span>Total orders</span><span>'+O.length+'</span></div><div><span>Pending</span><span>'+(c("Pending")+c("Payment Pending"))+'</span></div><div><span>Confirmed</span><span>'+c("Confirmed")+'</span></div><div><span>Delivered</span><span>'+c("Delivered")+'</span></div><div><span>Cancelled</span><span>'+c("Cancelled")+'</span></div><div><span>Order value (not profit)</span><span>'+inr(rev)+'</span></div><div><span>Qikink costs you entered</span><span>'+inr(cost)+'</span></div></div>'+
+'<h2>Charges and discounts</h2><form class="f"><label>Announcement bar text<input data-ann maxlength="140" value="'+esc(ANN)+'"></label>'+[["prepaid","Online discount ₹"],["cod","COD surcharge ₹"],["codFee","COD handling fee ₹"],["taxRate","Tax rate % (confirm with accountant)"],["ship","Shipping ₹"],["freeShip","Free shipping above ₹"]].map(function(a){return '<label>'+a[1]+'<input data-cf="'+a[0]+'" type="number" min="0" value="'+CFG[a[0]]+'"></label>'}).join("")+'<button class="btn">Save charges</button></form>'+
+'<h2>Products & inventory</h2><p class="note">Made-to-order = no inventory cap. Manual stock = customers can only buy the quantity you enter. Product photos can use an image URL; use your own licensed images for launch.</p>'+P.map(function(x){return '<div class="admin-product"><div class="admin-product-head"><b>'+esc(x.n)+'</b><small>'+esc(x.sku)+'</small></div><div class="admin-product-grid"><label>Price ₹<input type="number" min="1" data-pp="'+x.id+'" value="'+x.p+'"></label><label>Stock mode<select data-sm="'+x.id+'"><option value="made_to_order"'+(x.stockMode!="manual"?" selected":"")+'>Made to order</option><option value="manual"'+(x.stockMode=="manual"?" selected":"")+'>Manual stock</option></select></label><label>Stock quantity<input type="number" min="0" data-sq="'+x.id+'" value="'+(x.stockQty||0)+'"></label><label>Image URL<input type="url" data-img="'+x.id+'" value="'+esc(x.image||"")+'" placeholder="https://..."></label><label>Sizes (comma separated)<input data-sizes="'+x.id+'" value="'+esc(x.sizes.join(", "))+'" placeholder="S, M, L, XL"></label><label>Colours (comma separated)<input data-cols="'+x.id+'" value="'+esc(x.cols.join(", "))+'" placeholder="Black, Off White"></label><label>Description<input data-desc="'+x.id+'" value="'+esc(x.description||"")+'" maxlength="240"></label><label class="admin-check"><input type="checkbox" data-po="'+x.id+'" '+(x.off?"checked":"")+'> Hide / Sold out</label></div></div>'}).join("")+'<p><button class="btn" data-sp>Save products & inventory</button></p><h3>Add a new product</h3><form id="product-admin" class="admin-product-grid"><label>Product name<input id="add-name" maxlength="80" required placeholder="Afterhours Graphic Tee"></label><label>Category<select id="add-cat">'+CATS.filter(function(c){return c!="All"}).map(function(c){return '<option>'+esc(c)+'</option>'}).join("")+'</select></label><label>Price ₹<input id="add-price" type="number" min="1" required value="899"></label><label>SKU<input id="add-sku" maxlength="32" placeholder="VY-CUSTOM-001"></label><label>Image URL<input id="add-image" type="url" placeholder="https://..."></label><label>Sizes (comma separated)<input id="add-sizes" value="S, M, L, XL, XXL"></label><label>Colours (comma separated)<input id="add-colours" value="Black, Off White"></label><label>Stock mode<select id="add-mode"><option value="made_to_order">Made to order</option><option value="manual">Manual stock</option></select></label><label>Stock quantity<input id="add-stock" type="number" min="0" value="0"></label><label>Description<input id="add-description" maxlength="240" placeholder="Product details"></label><button class="btn">Add product</button></form>'+
+'<h2>Coupon codes</h2><p class="note">Create manual discount codes. These are saved in this browser demo only; do not use for live sales until connected to the secure backend.</p><form id="coupon-admin" class="admin-product-grid"><label>Code<input id="new-code" maxlength="24" placeholder="YASH100" required></label><label>Discount ₹<input id="new-off" type="number" min="1" value="100" required></label><label>Minimum cart ₹<input id="new-min" type="number" min="0" value="799"></label><button class="btn">Create coupon</button></form><div class="coupon-list">'+Object.keys(CFG.coupons).map(function(k){return '<div class="row"><b>'+esc(k)+'</b><span>'+inr(CFG.coupons[k].off)+' off · min '+inr(CFG.coupons[k].min)+'</span><button class="btn ghost" data-delcoupon="'+esc(k)+'">Delete</button></div>'}).join("")+'</div><h2>Orders</h2><button class="btn ghost" data-csv>Copy CSV</button> <span id="am" class="ok"></span>'+(O.length?O.map(function(o,i){return '<details class="note" style="color:var(--ow)"><summary>'+esc(o.id)+' · '+esc(o.name)+' · '+esc(o.st)+' · '+inr(o.tot)+'</summary><p>'+esc(o.email)+' · '+esc(o.phone)+'<br>'+esc(o.addr)+'<br>'+o.items.map(esc).join("<br>")+'<br>'+(o.pay=="cod"?"COD":"Online")+' ('+esc(o.payst)+') · Coupon: '+esc(o.coupon||"none")+' · Discounts: '+inr(o.disc)+' · Shipping: '+inr(o.shipping||0)+' · COD charges: '+inr(o.codCharge||0)+' · Tax: '+inr(o.tax||0)+'</p><button class="btn ghost" data-cpy="'+i+'">Copy shipping details</button><div class="f"><select data-of="st" data-i="'+i+'" aria-label="Status">'+STS.map(function(s){return '<option'+(s==o.st?" selected":"")+'>'+s+'</option>'}).join("")+'</select>'+[["qk","Qikink order reference"],["cr","Courier"],["tn","Tracking number"],["tu","Tracking URL (https)"],["cost","Qikink cost ₹"],["note","Internal notes"]].map(function(a){return '<input data-of="'+a[0]+'" data-i="'+i+'" placeholder="'+a[1]+'" aria-label="'+a[1]+'" value="'+esc(o[a[0]])+'">'}).join("")+'<button class="btn" data-so="'+i+'">Save order</button></div></details>'}).join(""):'<p style="color:var(--gr)">No orders yet. Place a test order in the shop and it will appear here.</p>')+'</div>'}
+$("admv").addEventListener("click",function(e){var t=e.target.closest("[data-ax],[data-sp],[data-csv],[data-cpy],[data-so],[data-delcoupon]");if(!t)return;
+if(t.dataset.ax!==undefined)location.hash="shop";
+else if(t.dataset.sp!==undefined){var pr={};P.forEach(function(x){var id=x.id,price=+$("admv").querySelector('[data-pp="'+id+'"]').value,mode=$("admv").querySelector('[data-sm="'+id+'"]').value,qty=Math.max(0,Math.floor(+$("admv").querySelector('[data-sq="'+id+'"]').value||0)),img=$("admv").querySelector('[data-img="'+id+'"]').value.trim(),sizes=$("admv").querySelector('[data-sizes="'+id+'"]').value.split(",").map(function(v){return v.trim()}).filter(Boolean),cols=$("admv").querySelector('[data-cols="'+id+'"]').value.split(",").map(function(v){return v.trim()}).filter(Boolean),desc=$("admv").querySelector('[data-desc="'+id+'"]').value.trim(),off=$("admv").querySelector('[data-po="'+id+'"]').checked;x.p=price>0&&price<100000?price:x.p;x.stockMode=mode;x.stockQty=qty;x.image=/^https:\/\//i.test(img)?img:x.image;x.sizes=sizes.length?sizes:x.sizes;x.cols=cols.length?cols:x.cols;x.description=desc||x.description;x.off=off;pr[id]={p:x.p,off:x.off,stockMode:x.stockMode,stockQty:x.stockQty,image:x.image,sizes:x.sizes,cols:x.cols,description:x.description}});PR=pr;W("vy_pr",pr);list();flash("Products and inventory saved")}
+else if(t.dataset.so!==undefined){var i=+t.dataset.so,o=O[i];Array.prototype.forEach.call($("admv").querySelectorAll('[data-i="'+i+'"]'),function(f){var k=f.dataset.of;o[k]=k=="cost"?Math.max(0,+f.value||0):f.value.slice(0,300)});if(o.tu&&!/^https?:\/\//i.test(o.tu))o.tu="";W("vy_orders",O);adm();flash("Order saved")}
+else if(t.dataset.cpy!==undefined){var q=O[+t.dataset.cpy];cp(q.name+"\n"+q.phone+"\n"+q.addr)}
+else cp(csv())});
+$("admv").addEventListener("submit",function(e){if(e.target.id=="product-admin"){e.preventDefault();var name=$("add-name").value.trim(),price=Math.floor(+$("add-price").value||0),sku=$("add-sku").value.trim()||("VY-CUSTOM-"+Date.now().toString(36).toUpperCase()),image=$("add-image").value.trim(),id=Math.max.apply(null,P.map(function(x){return x.id})) + 1;if(name.length<3||price<1){flash("Enter a product name and valid price");return}if(P.some(function(x){return x.sku.toLowerCase()==sku.toLowerCase()})){flash("SKU already exists");return}var product={id:id,n:name,cat:$("add-cat").value,p:price,mrp:0,cols:($("add-colours").value.split(",").map(function(v){return v.trim()}).filter(Boolean).length?$("add-colours").value.split(",").map(function(v){return v.trim()}).filter(Boolean):["Black","Off White"]),isNew:1,best:0,sku:sku,sizes:($("add-sizes").value.split(",").map(function(v){return v.trim()}).filter(Boolean).length?$("add-sizes").value.split(",").map(function(v){return v.trim()}).filter(Boolean):["S","M","L","XL","XXL"]),made:true,image:/^https:\/\//i.test(image)?image:PHOTOS[id%PHOTOS.length],description:$("add-description").value.trim()||"An original VYNTRO streetwear piece.",material:"Confirm fabric specifications before publishing.",stockMode:$("add-mode").value,stockQty:Math.max(0,Math.floor(+$("add-stock").value||0)),rating:0,reviewCount:0,off:false};P.push(product);EXTRA=P.filter(function(x){return x.id>=10});W("vy_extra",EXTRA);adm();list();flash("Product added in this browser demo");return}if(e.target.id=="coupon-admin"){e.preventDefault();var code=$("new-code").value.trim().toUpperCase().replace(/[^A-Z0-9_-]/g,""),off=Math.max(1,Math.floor(+$("new-off").value||0)),min=Math.max(0,Math.floor(+$("new-min").value||0));if(!code){flash("Enter a valid coupon code");return}CFG.coupons[code]={off:off,min:min};W("vy_coupons",CFG.coupons);adm();flash("Coupon created");return}e.preventDefault();var c={};Array.prototype.forEach.call(e.target.querySelectorAll("[data-cf]"),function(i){var max=i.dataset.cf=="taxRate"?100:100000,v=Math.max(0,Math.min(max,+i.value||0));c[i.dataset.cf]=v;CFG[i.dataset.cf]=v});var an=e.target.querySelector("[data-ann]");if(an){ANN=an.value.trim().slice(0,140);W("vy_announcement",ANN);$("ann").textContent=ANN}W("vy_cfg",c);flash("Charges and announcement saved")});
+function trackView(){$("cp").innerHTML='<button class="ib" data-x aria-label="Close">✕</button><h2>Track order</h2><form class="f" id="tf"><input id="tid" placeholder="Order ID, e.g. VY-TEST-ABC123" aria-label="Order ID"><button class="btn">Track</button></form><div id="tr"></div><p class="note">Demo: this only finds orders placed in this browser.</p>';open($("cp"))}
+document.addEventListener("click",function(e){if(e.target.closest("[data-tr]")){e.preventDefault();trackView()}});
+function route(){var a=location.hash=="#admin";$("admv").style.display=a?"block":"none";if(a)adm()}
+addEventListener("hashchange",route);
+
+function waLink(o,u){var m="New VYNTRO order "+o.id+"\n"+o.items.join("\n")+"\nTotal: "+inr(o.tot)+" ("+(o.pay=="cod"?"COD":"Paid online")+")"+(u?"\nUTR: "+u:"")+"\n"+o.name+", "+o.phone+"\n"+o.addr;return "https://wa.me/"+SHOP.wa+"?text="+encodeURIComponent(m)}
+function done(o){var up=o.pay=="prepaid";$("cp").innerHTML='<button class="ib" data-x aria-label="Close">\u2715</button><h2>Order placed</h2><p>Order ID: <b>'+esc(o.id)+'</b></p>'+(up?'<p>Pay <b>'+inr(o.tot)+'</b> by UPI to complete your order.</p><p><a class="btn" href="upi://pay?pa='+encodeURIComponent(SHOP.upi)+'&pn='+encodeURIComponent(SHOP.name)+'&am='+o.tot+'&cu=INR&tn='+encodeURIComponent(o.id)+'">Pay with UPI app</a></p><p style="color:var(--gr)">Or scan this QR and pay exactly '+inr(o.tot)+':</p><img src="qr.png" alt="UPI QR code" style="width:200px;background:#fff;padding:8px" onerror="this.style.display=\'none\'"><div class="f"><input id="utr" inputmode="numeric" maxlength="12" placeholder="12-digit UTR / transaction number" aria-label="UTR"><div class="err" id="ue" role="alert"></div></div>':'<p>You pay <b>'+inr(o.tot)+'</b> in cash when the parcel arrives.</p>')+'<p class="note">Last step: send your order to us on WhatsApp. '+(up?'We confirm the order once we see your payment.':'We confirm the order on WhatsApp.')+' We never ask for your card, PIN or OTP.</p><a class="btn" data-wa="'+esc(o.id)+'" href="#" target="_blank" rel="noopener noreferrer">Send order on WhatsApp</a>'}
+document.addEventListener("click",function(e){var t=e.target.closest("[data-wa]");if(!t)return;var o=O.filter(function(x){return x.id==t.dataset.wa})[0],u=$("utr")?$("utr").value.trim():"";if(!o){e.preventDefault();return}if(o.pay=="prepaid"){if(!/^\d{12}$/.test(u)){e.preventDefault();$("ue").textContent="Enter the 12-digit UTR from your UPI app after paying.";return}o.payst="UTR "+u+" (not verified)";W("vy_orders",O)}t.href=waLink(o,u)});
+var helpAnswers={order:"Choose a product, select your size and colour, add it to your bag, then enter your delivery details at checkout.",payment:"Prepaid checkout includes the currently configured ₹80 online discount. Real online payments are not active in this demo.",cod:"COD adds ₹80 plus ₹15 handling by default. These amounts can be changed in the local admin settings.",delivery:"Products are made to order. Delivery estimates are indicative; tracking appears after the seller enters courier and tracking details.",returns:"The proposed return request window is 4 days after delivery. Eligibility and statutory consumer rights are subject to the published policy and applicable law.",damage:"Keep the packaging and contact support with clear photos. The seller must review the request under the applicable policy."};
+$("help-open").addEventListener("click",function(){$("help-panel").hidden=false});
+$("help-close").addEventListener("click",function(){$("help-panel").hidden=true});
+$("help-answers").addEventListener("click",function(e){var b=e.target.closest("[data-help]");if(b)$("help-response").textContent=helpAnswers[b.dataset.help]||"Please contact support."});
+$("ann").textContent=ANN;
+$("help-wa").href="https://wa.me/"+SHOP.wa;
+$("sup").innerHTML='Support: <a href="https://wa.me/'+SHOP.wa+'" rel="noopener">WhatsApp</a>';
+$("wc").textContent=wish.length;chips();list();cartView();route();
+</script></body></html>
